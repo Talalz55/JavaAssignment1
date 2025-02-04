@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{fragments :: head}">
+    <title>Assignment 1</title>
+</head>
+<body>
+
+<div class="container">
+    <header th:replace="~{fragments :: header}">
+    </header>
+
+    <main class="available-books-main">
+        <div class="flex-col-centered">
+            <h1>Available Books</h1>
+        </div>
+
+        <!-- Table Container (scrollable) -->
+        <div class="table-container">
+            <table class="styled-table">
+                <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="book : ${books}">
+                    <td th:text="${book.bookISBN}"></td>
+                    <td th:text="${book.bookTitle}"></td>
+                    <td th:text="${book.bookAuthor}"></td>
+                    <td th:text="${book.bookPrice}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Add Book Form -->
+        <div class="flex-col-centered">
+            <h2>Add a New Book</h2>
+            <div class="form-container">
+                <form th:action="@{/AddBook}" method="post">
+                    <div>
+                        <label for="bookTitle">Title:</label>
+                        <input type="text" id="bookTitle" name="bookTitle" required>
+                    </div>
+                    <div>
+                        <label for="bookAuthor">Author:</label>
+                        <input type="text" id="bookAuthor" name="bookAuthor" required>
+                    </div>
+                    <div>
+                        <label for="bookPrice">Price:</label>
+                        <input type="number" id="bookPrice" name="bookPrice" step="0.01" min="0" required>
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="submit">Add Book</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer th:replace="~{fragments :: footer}">
+    </footer>
+</div>
+
+</body>
+</html>

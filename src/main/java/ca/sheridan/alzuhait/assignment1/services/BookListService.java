@@ -5,6 +5,8 @@ import ca.sheridan.alzuhait.assignment1.beans.BookList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.*;
 
 @Service
@@ -16,7 +18,7 @@ public class BookListService {
     private Random random = new Random(); // Instance of Random for random generation
 
     // Method to initialize default books in the BookList
-    public void initializeBooks() {
+    public void initialize() {
         List<Book> books = new ArrayList<>();
 
         // Create 10 default books with random prices
@@ -34,9 +36,12 @@ public class BookListService {
         bookList.setBooks(books);
     }
 
-    // Generate a random price between 100.0 and 999.9
+
     private double generateRandomPrice() {
-        return (1000 + random.nextInt(9000)) / 10.0;
+        double price = (1000 + random.nextInt(9000)) / 100.0;
+        BigDecimal bd = new BigDecimal(price);
+        bd = bd.setScale(2, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 
     // Generate a random 6-digit ISBN that is unique within the provided book list

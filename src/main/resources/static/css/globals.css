@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     padding: 0;
     margin: 0;
@@ -28,6 +29,13 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+}
+
+.flex-col-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -87,6 +95,7 @@ nav ul li a:hover {
 
 main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
@@ -94,9 +103,110 @@ main {
 }
 
 main img {
-    width: 50vw;
+    width: 40vw;
     height: auto;
     border-radius: var(--border-radius);
+}
+
+.available-books-main {
+    gap: 1rem;
+}
+
+.table-container {
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
+}
+
+/* Table styles */
+.styled-table {
+    margin: 2rem auto;
+    font-size: 1rem;
+    min-width: 60vw;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+    background: var(--white);
+}
+
+.styled-table thead tr {
+    background-color: var(--gold);
+    color: var(--black);
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--silver);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: var(--silver);
+}
+
+.styled-table tbody tr:hover {
+    background-color: var(--gold);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+/* Form styles */
+.form-container {
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 1rem;
+    border: 1px solid var(--silver);
+    border-radius: var(--small-border-radius);
+    background-color: var(--white);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input {
+    padding: 0.5rem;
+    border: 1px solid var(--silver);
+    border-radius: var(--small-border-radius);
+}
+
+.form-container button {
+    padding: 0.75rem;
+    background-color: var(--gold);
+    border: none;
+    color: var(--black);
+    font-weight: bold;
+    border-radius: var(--small-border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.form-container button:hover {
+    background-color: var(--silver);
+}
+
+.form-container form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.form-container form button {
+    width: 100%;
+}
+
+
+/* Headings */
+main h1, main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--gold);
 }
 
 footer {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{fragments :: head}">
+    <title>Assignment 1</title>
+</head>
+<body>
+
+<div class="container">
+    <header th:replace="~{fragments :: header}">
+    </header>
+
+    <main class="available-books-main">
+        <div class="flex-col-centered">
+            <h1>Available Books</h1>
+        </div>
+
+        <div class="table-container">
+            <table class="styled-table">
+                <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Add To Cart</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="book : ${books}">
+                    <td th:text="${book.bookISBN}"></td>
+                    <td th:text="${book.bookTitle}"></td>
+                    <td th:text="${book.bookAuthor}"></td>
+                    <td th:text="${book.bookPrice}"></td>
+                    <td>
+                        <a th:href="@{/AddBookToCart/{bookISBN}(bookISBN=${book.bookISBN})}">Add To Cart</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <h2 th:text="'Number of Books In Cart: ' + ${bookCartCount}"></h2>
+        </div>
+    </main>
+
+    <footer th:replace="~{fragments :: footer}">
+    </footer>
+</div>
+
+</body>
+</html>

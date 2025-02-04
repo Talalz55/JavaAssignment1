@@ -5,6 +5,8 @@ import ca.sheridan.alzuhait.assignment1.beans.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 @Service
 public class BookCartListService {
 
@@ -13,22 +15,34 @@ public class BookCartListService {
 
     public final double taxRate = 0.13;
 
+    public void initialize(){
+        bookCartList.setBooks(new ArrayList<>());
+    }
+
+    // Helper method to round a double to 2 decimal places
+    private double roundToTwoDecimals(double value) {
+        return Math.round(value * 100.0) / 100.0;
+    }
+
     // Calculate the subtotal (sum of all book prices)
     public double getSubTotal() {
-        return bookCartList
+        double subTotal = bookCartList
                 .getBooks()
                 .stream()
                 .mapToDouble(Book::getBookPrice)
                 .sum();
+        return roundToTwoDecimals(subTotal);
     }
 
     // Calculate the tax amount (subtotal * taxRate)
     public double getTaxAmount(){
-        return getSubTotal() * taxRate;
+        double taxAmount = getSubTotal() * taxRate;
+        return roundToTwoDecimals(taxAmount);
     }
 
     // Calculate the total (subtotal + tax amount)
     public double getTotal(){
-        return getSubTotal() + getTaxAmount();
+        double total = getSubTotal() + getTaxAmount();
+        return roundToTwoDecimals(total);
     }
 }

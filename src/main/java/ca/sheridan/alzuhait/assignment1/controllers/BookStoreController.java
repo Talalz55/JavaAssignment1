@@ -29,13 +29,16 @@ public class BookStoreController {
 
     @Autowired
     private BookCartListService bookCartListService;
+    @Autowired
+    private Book book;
 
-    // Initialize the default books after the controller is created
+    // Initialize the list beans
     @PostConstruct
     public void init() {
-        log.info("Initializing default books in the book list.");
-        bookListService.initializeBooks(); // Initialize the books
-        log.info("Default books initialized successfully.");
+        log.info("Initializing book list and book cart list");
+        bookListService.initialize(); // Initialize the books
+        bookCartListService.initialize(); // Initialize the books
+        log.info("Initialized successfully.");
     }
 
     // Display the homepage
@@ -84,22 +87,24 @@ public class BookStoreController {
     }
 
     // Display books available for shopping and cart count
-    @GetMapping("/ShoppingBooks")
-    public String getShoppingBooks(Model model) {
+    @GetMapping("/ShoppingCart")
+    public String getShoppingCart(Model model) {
         log.debug("Accessed the shopping books page.");
         List<Book> books = bookList.getBooks();
         List<Book> cartBooks = bookCartList.getBooks();
+        int bookCartCount = cartBooks.size();
 
         model.addAttribute("books", books);  // Add available books
-        model.addAttribute("bookCartCount", cartBooks.size());  // Add cart count
+        model.addAttribute("bookCartCount", bookCartCount);  // Add cart count
 
-        log.info("Displayed shopping books with {} available books and {} in cart.", books.size(), cartBooks.size());
-        return "ShoppingBooks"; // Return the shopping books view
+        log.info("Displayed shopping cart with {} available books and {} in cart.", books.size(), cartBooks.size());
+        return "ShoppingCart"; // Return the shopping books view
     }
 
     // Add a book to the cart
-    @PutMapping("/AddBookToCart/{bookISBN}")
-    public String putAddBookToCart(
+    @GetMapping("/AddBookToCart/{bookISBN}")
+    public String getAddBookToCart(
+            Model model,
             @PathVariable String bookISBN
     ) {
         log.info("Attempting to add book with ISBN {} to the cart.", bookISBN);
@@ -111,7 +116,9 @@ public class BookStoreController {
                 .findFirst()
                 .orElse(null);
 
+
         if (bookToAdd != null) {
+            System.out.println(bookToAdd);
             List<Book> newBooks = bookCartList.getBooks();
             newBooks.add(bookToAdd);
             bookCartList.setBooks(newBooks);
@@ -120,7 +127,7 @@ public class BookStoreController {
         } else {
             log.warn("Book with ISBN {} not found, cannot add to cart.", bookISBN);
         }
-        return "ShoppingBooks";  // Return to the shopping books view
+        return this.getShoppingCart(model);
     }
 
     // Display the checkout page with cart details, subtotal, tax, and total
