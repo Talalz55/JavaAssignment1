@@ -1,0 +1,25 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter Sans-serif";
+
+    --purple: rgb(69, 35, 106);
+    --brown-yellow: rgb(210, 150, 105);
+    --middle-yellow: rgb(233, 169, 121);
+    --indigo: rgb(28, 46, 93);
+    --dark-blue: rgb(22, 31, 57);
+
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+}

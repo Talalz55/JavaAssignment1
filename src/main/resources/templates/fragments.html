@@ -1,0 +1,24 @@
+<head th:fragment="head">
+    <link rel="stylesheet" th:href="@{/css/globals.css}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<header th:fragment="header">
+    <h1>Welcome to Talal's Book Store!</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/AvailableBooks">Available Books</a></li>
+            <li><a href="/ShoppingBooks">Shopping Cart</a></li>
+            <li><a href="/CheckOut">Checkout</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<footer th:fragment="footer">
+    <h2>&copy;: Talal Al-Zuhair</h2>
+    <p> ID: </p>
+</footer>

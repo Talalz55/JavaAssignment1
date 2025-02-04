@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments/head :: head">
+    <title>Assignment 1</title>
+</head>
+<body>
+
+<header th:replace="fragments/header :: header">
+</header>
+
+<main>
+    <img th:src="@{/images/logo.png}" alt="mainImage"/>
+</main>
+
+<footer th:replace="fragments/footer :: footer">
+</footer>
+
+</body>
+</html>
