@@ -1,0 +1,207 @@
+﻿Diagnose log at 2025-02-04T06:43:47Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.3.2
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 22631)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\aedul
+DriverData=C:\Windows\System32\Drivers\DriverData
+TERMINAL_EMULATOR=JetBrains-JediTerm
+GIT_TRACE2_PARENT_SID=c1001b07-f07e-4179-953f-de67c53e7450
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDrive=C:\Users\aedul\OneDrive
+ChocolateyLastPathUpdate=133420689614091891
+PyCharm=C:\Program Files\JetBrains\PyCharm 2024.2.4\bin;
+RegionCode=NA
+TMP=C:\Users\aedul\AppData\Local\Temp
+HOME=C:\Users\aedul
+PROCESSOR_REVISION=ba03
+PROCESSOR_ARCHITECTURE=x86
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
+RustRover=C:\Program Files\JetBrains\RustRover 2024.2.5\bin;
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+TEMP=C:\Users\aedul\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\aedul\AppData\Local
+MSYSTEM=MINGW64
+TERM=xterm-256color
+GOPATH=C:\Users\aedul\go
+IntelliJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin;
+COLORTERM=truecolor
+windir=C:\windows
+JAVA_HOME=C:\Program Files\Java\jdk-21
+USERDOMAIN=ABED
+ProgramFiles(x86)=C:\Program Files (x86)
+platformcode=KV
+JETBRAINS_INTELLIJ_COMMAND_END_MARKER=kdVaB2Va530s9Grppc5MgPMuXROsANs74erCEgj8f4ehUelo1s0e0OFINzu48tJF
+M2_HOME=C:\Program Files\Java\apache-maven-3.9.5
+PROCESSOR_LEVEL=6
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 3, GenuineIntel
+TMPDIR=C:\Users\aedul\AppData\Local\Temp
+GO111MODULE=on
+PSModulePath=C:\Users\aedul\OneDrive\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+EFC_9072=1
+NUMBER_OF_PROCESSORS=12
+SESSIONNAME=Console
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+ProgramFiles=C:\Program Files (x86)
+IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAhbjfScUBj0Wh5HMO3qUvqAQAAAACAAAAAAAQZgAAAAEAACAAAABrkVXAOqMgb7vzpQImTaEtdlX6mAGzeEIHcBxuwkXtHgAAAAAOgAAAAAIAACAAAAB7k69ppK/4KNKxJx1QVPPKmCt4+hsAAcq/wQew8ZOG/GAAAABWb2aTEdbTvl2pzGa7EW8KYT1Oy/P/VMg9xqxOBbpsr1RjErRnMCgFHEK2BHHjp4QVhrwVFuJHyfLqr70AZuEZS16FQ21V7Y6MZdOl0iD10lmdCezAMlNpf3DcgL9Au6VAAAAAHh2RCrQXLI0Fa/mRIF1f8Zfnp0UaWHtKsTQf+gksQF+CbNVuv63eHtOJv+tMIMCRhG7BgdJyfSHKk/XgiIsXvg==
+asl.log=Destination=file
+PLINK_PROTOCOL=ssh
+MAVEN_HOME=C:\Program Files\Java\apache-maven-3.9.5\bin
+MSYS=disable_pcon
+PATH=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\aedul\bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\apache-maven-3.9.5\bin;C:\Program Files\Java\apache-tomee-webprofile-9.1.1\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\{userName}\AppData\Roaming\npm;C:\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\msys64\mingw64\bin;C:\Users\aedul\AppData\Roaming\npm;C:\stripe.exe;C:\Program Files\Go\bin;C:\Program Files\Azure Dev CLI\;C:\Program Files\PuTTY\;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\aedul\OneDrive\Desktop\Database\Part B\instantclient-basic-windows.x64-23.6.0.24.10;C:\Program Files (x86)\GitHub CLI\;C:\Users\aedul\AppData\Local\Android\Sdk\platform-tools;C:\Users\aedul\AppData\Local\Android\Sdk\tools;C:\Program Files\nodejs\;C:\Users\aedul\Downloads\vault_1.18.3_windows_386;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\apache-maven-3.9.5\bin;C:\stripe.exe;C:\Users\aedul\.dotnet\tools;C:\Users\aedul\AppData\Local\Programs\Azure Data Studio\bin;C:\Users\aedul\go\bin;C:\Users\aedul\AppData\Local\Programs\mongosh\;C:\Program Files\JetBrains\PyCharm 2024.2.4\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin;C:\Program Files\JetBrains\RustRover 2024.2.5\bin;C:\Program Files\JetBrains\CLion 2024.2.3\bin;C:\Users\aedul\AppData\Local\Android\Sdk\platform-tools;C:\Users\aedul\AppData\Local\Android\Sdk\emulator;C:\Users\aedul\AppData\Local\Android\Sdk\commandlinetools-win-11076708_latest\cmdline-tools\bin;C:\Users\aedul\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aedul\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\aedul\AppData\Roaming\npm
+ChocolateyInstall=C:\ProgramData\chocolatey
+OnlineServices=Online Services
+SystemRoot=C:\windows
+PUBLIC=C:\Users\Public
+ANDROID_HOME=C:\Users\aedul\AppData\Local\Android\Sdk
+TERM_SESSION_ID=bde3f930-eee0-47f0-8004-40f1d5c5cbd3
+COMPUTERNAME=ABED
+CommonProgramW6432=C:\Program Files\Common Files
+ZES_ENABLE_SYSMAN=1
+LOGONSERVER=\\ABED
+ComSpec=C:\windows\system32\cmd.exe
+USERPROFILE=C:\Users\aedul
+ProgramData=C:\ProgramData
+USERDOMAIN_ROAMINGPROFILE=ABED
+CLion=C:\Program Files\JetBrains\CLion 2024.2.3\bin;
+APPDATA=C:\Users\aedul\AppData\Roaming
+HOMEDRIVE=C:
+CATALINA_HOME=C:\Program Files\Java\apache-tomee-webprofile-9.1.1
+OS=Windows_NT
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+USERNAME=aedul
+PROCESSOR_ARCHITEW6432=AMD64
+PSExecutionPolicyPreference=Bypass
+LC_CTYPE=C.UTF-8
+ProgramW6432=C:\Program Files
+SystemDrive=C:
+PT8HOME=C:\Program Files\Cisco Packet Tracer 8.2.1
+OneDriveConsumer=C:\Users\aedul\OneDrive
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\aedul\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\aedul\AppData\Local\Temp\5db04386a0c5ee5330f12ae7'... OK
+Reading from temporary file 'C:\Users\aedul\AppData\Local\Temp\5db04386a0c5ee5330f12ae7'... OK
+Deleting temporary file 'C:\Users\aedul\AppData\Local\Temp\5db04386a0c5ee5330f12ae7'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\aedul
+UserDataDirectoryPath: C:\Users\aedul\.gcm
+GetCurrentDirectory(): C:\Users\aedul\IdeaProjects\assignment1
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: False
+Exception:
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'example.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at GitCredentialManager.Diagnostics.NetworkingDiagnostic.<RunInternalAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at GitCredentialManager.Diagnostics.Diagnostic.<RunAsync>d__6.MoveNext()
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... warning: HEAD request failed
+Sending HEAD request to http://httpforever.com...
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.42.0.windows.2'
+Locating current repository... OK
+Git repository at 'C:/Users/aedul/IdeaProjects/assignment1/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/aedul/.gitconfig	user.email=┬ûalzuhait@sheridancollege.ca
+file:C:/Users/aedul/.gitconfig	user.name=Talal Al-Zuhair
+file:C:/Users/aedul/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/aedul/.gitconfig	filter.lfs.required=true
+file:C:/Users/aedul/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/aedul/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/aedul/.gitconfig	safe.directory=C:/Users/aedul/OneDrive/Desktop/React-Native/d-sports-app
+file:C:/Users/aedul/.gitconfig	safe.directory=C:/Users/aedul/OneDrive/Desktop/React-Native/app
+file:C:/Users/aedul/.gitconfig	http.postbuffer=524288000
+file:C:/Users/aedul/.gitconfig	credential.helper=
+file:C:/Users/aedul/.gitconfig	credential.helper=C:/Program\ Files/Git/mingw64/bin/git-credential-manager.exe
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/Talalz55/JavaAssignment1.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	credential.helper=store
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\aedul\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\aedul\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
