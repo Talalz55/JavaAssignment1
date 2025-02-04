@@ -5,6 +5,8 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+gcm-diagnose.log
+
 ### STS ###
 .apt_generated
 .classpath
