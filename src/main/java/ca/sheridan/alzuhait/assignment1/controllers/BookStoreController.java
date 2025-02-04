@@ -136,7 +136,6 @@ public class BookStoreController {
         log.debug("Accessed the checkout page.");
         model.addAttribute("books", bookCartList.getBooks());
         model.addAttribute("subTotal", bookCartListService.getSubTotal());
-        model.addAttribute("taxRate", bookCartListService.taxRate);
         model.addAttribute("taxAmount", bookCartListService.getTaxAmount());
         model.addAttribute("total", bookCartListService.getTotal());
 

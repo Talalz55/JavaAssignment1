@@ -30,7 +30,7 @@
                     <td th:text="${book.bookISBN}"></td>
                     <td th:text="${book.bookTitle}"></td>
                     <td th:text="${book.bookAuthor}"></td>
-                    <td th:text="${book.bookPrice}"></td>
+                    <td th:text="${#numbers.formatCurrency(book.bookPrice)}"></td>
                 </tr>
                 </tbody>
             </table>

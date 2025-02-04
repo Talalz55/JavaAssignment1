@@ -11,7 +11,7 @@
 
     <main class="available-books-main">
         <div class="flex-col-centered">
-            <h1>Available Books</h1>
+            <h1>Shopping Cart</h1>
         </div>
 
         <div class="table-container">
@@ -30,7 +30,7 @@
                     <td th:text="${book.bookISBN}"></td>
                     <td th:text="${book.bookTitle}"></td>
                     <td th:text="${book.bookAuthor}"></td>
-                    <td th:text="${book.bookPrice}"></td>
+                    <td th:text="${#numbers.formatCurrency(book.bookPrice)}"></td>
                     <td>
                         <a th:href="@{/AddBookToCart/{bookISBN}(bookISBN=${book.bookISBN})}">Add To Cart</a>
                     </td>
